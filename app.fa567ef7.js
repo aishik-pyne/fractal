@@ -31,4 +31,4 @@ var t;!function(e,i){"function"==typeof t&&t.amd?t("p5.dom",["p5"],function(t){i
 },{"../simulation/lines":"WfHO"}],"YSF2":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0}),exports.runSimulation=void 0;var t=e(require("p5"));require("p5/lib/addons/p5.dom"),require("bulma/css/bulma.css");var n=require("./utils/simluationController"),u=null;function o(){var e=document.getElementById("r-input"),o=document.getElementById("n-input"),i=document.getElementById("simulation-section").offsetWidth,l=document.getElementById("simulation-hero").offsetHeight;console.log(i,l),u&&u.remove(),u=new t.default(n.simulation(parseFloat(e.value),parseFloat(o.value),i,l))}document.getElementById("runSimulationButton").addEventListener("click",o),exports.runSimulation=o;
 },{"p5":"rnl4","p5/lib/addons/p5.dom":"mxZr","bulma/css/bulma.css":"bDxD","./utils/simluationController":"CJiA"}]},{},["YSF2"], null)
-//# sourceMappingURL=fractal/app.fa567ef7.js.map
+//# sourceMappingURL=app.fa567ef7.js.map
