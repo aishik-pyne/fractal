@@ -13,14 +13,17 @@ export function simulation(r: number, n: number, maxWidth: number, maxHeight: nu
             canvas.parent("app");
             p5.background("#1a1a2e")
 
-            setInterval(() => {
-                linesSimulation.draw();
-                linesSimulation.step();
-            }, 20);
+            // setInterval(() => {
+            //     linesSimulation.draw();
+            //     linesSimulation.step();
+            // }, 20);
         };
 
         // The sketch draw method
         p5.draw = () => {
+            p5.background("#1a1a2e")
+            linesSimulation.draw();
+            linesSimulation.step();
 
         };
     };

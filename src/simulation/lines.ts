@@ -35,5 +35,8 @@ export default class LinesSimulation implements BaseSimulation {
             this.lineSegments[this.lineSegments.length - 1].y + this.r * Math.sin(this.angle)
         )
         this.lineSegments.push(newVec)
+        if (this.lineSegments.length > 150) {
+            this.lineSegments.splice(0, 1)
+        }
     }
 }

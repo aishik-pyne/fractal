@@ -13,11 +13,16 @@ export function runSimulation() {
 	const n: HTMLInputElement = <HTMLInputElement>document.getElementById('n-input');
 	const maxWidth: number = (<HTMLDivElement>document.getElementById('simulation-section')).offsetWidth
 	const maxHeight: number = (<HTMLDivElement>document.getElementById('simulation-hero')).offsetHeight
-	console.log(maxWidth, maxHeight);
-
 	if (x) {
 		x.remove();
 	}
 
 	x = new P5(simulation(parseFloat(r.value), parseFloat(n.value), maxWidth, maxHeight));
 }
+window.addEventListener("resize", () => {
+	if (x) {
+		const maxWidth: number = (<HTMLDivElement>document.getElementById('simulation-section')).offsetWidth
+		const maxHeight: number = (<HTMLDivElement>document.getElementById('simulation-hero')).offsetHeight
+		x.resizeCanvas(maxWidth, maxHeight, true);
+	}
+})
