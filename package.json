@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html",
-    "release": "parcel build index.html --public-url ./fractal",
+    "release": "parcel build index.html --public-url ./",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
