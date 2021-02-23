@@ -1,11 +1,12 @@
 {
-  "name": "p5js-with-typescript",
+  "name": "fractal",
   "version": "1.0.0",
   "description": "A template for a p5.js sketch using Typescript",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html",
+    "release": "parcel build index.html --public-url ./fractal",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
